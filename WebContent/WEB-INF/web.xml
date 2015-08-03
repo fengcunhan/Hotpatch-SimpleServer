@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>PathServer</display-name>
+  <welcome-file-list>
+    <welcome-file>/upload/fileupload.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>FileUpLoad</servlet-name>
+  	<servlet-class>com.server.fileupload.FileUpLoad</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FileUpLoad</servlet-name>
+  	<url-pattern>/FileUpLoad</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Test</servlet-name>
+  	<servlet-class>com.server.fileupload.Test</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Test</servlet-name>
+  	<url-pattern>/Test</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>Patch</servlet-name>
+  	<servlet-class>com.server.fileupload.Patch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Patch</servlet-name>
+  	<url-pattern>/patch</url-pattern>
+  </servlet-mapping>
+</web-app>
